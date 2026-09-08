@@ -6,11 +6,11 @@
 
 :root {
   /* Color */
-  --seashell: #FFF3F0;       /* background */
-  --graphite: #41393E;         /* primary text */
-  --copperwood: #BB6B00;    /* secondary text, muted */
-  --softperiwinkle: #A594F9;      /* ink-blue, used for links and small emphasis */
-  --brightgold: #FDE12D;/* ochre, used ONLY on hover/focus states */
+  --paper: #FAF9F6;       /* background */
+  --ink: #1C1B19;         /* primary text */
+  --ink-soft: #55534D;    /* secondary text, muted */
+  --accent: #9046CF;      /* purple, used for links and small emphasis */
+  --accent-hover: #916953;/* toffee brown, used ONLY on hover/focus states */
   --line: #DEDAD1;        /* hairline borders/dividers */
 
   /* Type scale — a limited set of sizes keeps the page feeling considered */
@@ -50,8 +50,8 @@ html {
 }
 
 body {
-  background: var(--seashell);
-  color: var(--graphite);
+  background: var(--paper);
+  color: var(--ink);
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: var(--size-body);
   line-height: 1.6;
@@ -73,7 +73,7 @@ a {
 /* Visible keyboard focus — accessibility, not optional */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--softperiwinkle);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
 
@@ -115,13 +115,13 @@ img {
 
 .site-nav a {
   font-size: var(--size-small);
-  color: var(--copperwood);
+  color: var(--ink-soft);
   transition: color 0.15s ease;
 }
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  color: var(--brightgold);
+  color: var(--accent-hover);
 }
 
 /* ==========================================================================
@@ -139,7 +139,7 @@ img {
 
 .hero p {
   font-size: 1.25rem;
-  color: var(--copperwood);
+  color: var(--ink-soft);
   max-width: 60ch;
 }
 
@@ -153,7 +153,7 @@ img {
 
 .work-list h2 {
   font-size: var(--size-h3);
-  color: var(--copperwood);
+  color: var(--ink-soft);
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -180,17 +180,17 @@ img {
 }
 
 .work-item:hover .work-item-title {
-  color: var(--softperiwinkle);
+  color: var(--accent);
 }
 
 .work-item-meta {
-  color: var(--copperwood);
+  color: var(--ink-soft);
   font-size: var(--size-small);
   white-space: nowrap;
 }
 
 .work-item-desc {
-  color: var(--copperwood);
+  color: var(--ink-soft);
   max-width: 60ch;
   margin-top: 0.5rem;
   font-size: 0.9375rem;
@@ -212,143 +212,17 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--copperwood);
+  color: var(--ink-soft);
   font-size: var(--size-small);
 }
 
 .site-footer a {
-  color: var(--graphite);
+  color: var(--ink);
   transition: color 0.15s ease;
 }
 
 .site-footer a:hover {
-  color: var(--softperiwinkle);
-}
-
-/* ==========================================================================
-   CASE STUDY PAGE
-   ========================================================================== */
-.cs-header {
-  padding-block: clamp(2rem, 6vw, 4rem) clamp(1.5rem, 4vw, 2.5rem);
-  max-width: 800px;
-}
-
-.cs-header .eyebrow {
-  color: var(--copperwood);
-  font-size: var(--size-small);
-  margin-bottom: 0.75rem;
-}
-
-.cs-header h1 {
-  font-size: var(--size-hero);
-  margin-bottom: 1rem;
-}
-
-/* Meta row: Client / Services / My Role / Year — like a small spec sheet */
-.cs-meta {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  padding-block: 1.75rem;
-  margin-block: clamp(1.5rem, 4vw, 3rem);
-}
-
-.cs-meta dt {
-  font-size: var(--size-small);
-  color: var(--copperwood);
-  margin-bottom: 0.35rem;
-}
-
-.cs-meta dd {
-  font-size: 0.9375rem;
-}
-
-@media (max-width: 700px) {
-  .cs-meta {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 1.5rem;
-  }
-}
-
-.cs-section {
-  max-width: 720px;
-  padding-block: clamp(1.5rem, 4vw, 2.5rem);
-}
-
-.cs-section h2 {
-  font-size: var(--size-h2);
-  margin-bottom: 1rem;
-}
-
-.cs-section h3 {
-  font-size: var(--size-h3);
-  color: var(--asoftperiwinkle);
-  margin-bottom: 0.75rem;
-}
-
-.cs-section p {
-  color: var(--copperwood);
-  margin-bottom: 1.25rem;
-}
-
-.cs-workstream + .cs-workstream {
-  margin-top: 2.5rem;
-}
-
-/* Results: bold numbers get their own visual weight, no card chrome needed */
-.cs-results {
-  border-top: 1px solid var(--line);
-  padding-block: clamp(2rem, 5vw, 3.5rem);
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-}
-
-.cs-results h2 {
-  grid-column: 1 / -1;
-  font-size: var(--size-h3);
-  color: var(--copperwood);
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.cs-stat-number {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-weight: 700;
-  font-size: 2.25rem;
-  letter-spacing: -0.02em;
-  color: var(--softperiwinkle);
-  line-height: 1.1;
-}
-
-.cs-stat-label {
-  color: var(--copperwood);
-  font-size: 0.9375rem;
-  margin-top: 0.25rem;
-}
-
-.cs-credits {
-  border-top: 1px solid var(--line);
-  padding-block: clamp(1.5rem, 4vw, 2.5rem);
-  color: var(--copperwood);
-  font-size: var(--size-small);
-}
-
-.cs-credits dt {
-  color: var(--graphite);
-  display: inline;
-}
-
-.cs-note {
-  font-size: var(--size-small);
-  color: var(--copperwood);
-  font-style: italic;
-  border-left: 2px solid var(--line);
-  padding-left: 1rem;
-  margin-top: 1rem;
+  color: var(--accent-hover);
 }
 
 /* ==========================================================================
@@ -365,6 +239,6 @@ img {
 }
 
 .simple-page p {
-  color: var(--copperwood);
+  color: var(--ink-soft);
   max-width: 60ch;
 }
