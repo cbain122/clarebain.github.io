@@ -50,8 +50,8 @@ html {
 }
 
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: var(--seashell);
+  color: var(--graphite);
   font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: var(--size-body);
   line-height: 1.6;
@@ -73,7 +73,7 @@ a {
 /* Visible keyboard focus — accessibility, not optional */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--softperiwinkle);
   outline-offset: 3px;
 }
 
@@ -115,13 +115,13 @@ img {
 
 .site-nav a {
   font-size: var(--size-small);
-  color: var(--ink-soft);
+  color: var(--copperwood);
   transition: color 0.15s ease;
 }
 
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
-  color: var(--accent-hover);
+  color: var(--brightgold);
 }
 
 /* ==========================================================================
@@ -139,7 +139,7 @@ img {
 
 .hero p {
   font-size: 1.25rem;
-  color: var(--ink-soft);
+  color: var(--copperwood);
   max-width: 60ch;
 }
 
@@ -153,7 +153,7 @@ img {
 
 .work-list h2 {
   font-size: var(--size-h3);
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   margin-bottom: 2rem;
@@ -180,17 +180,17 @@ img {
 }
 
 .work-item:hover .work-item-title {
-  color: var(--accent);
+  color: var(--softperiwinkle);
 }
 
 .work-item-meta {
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-size: var(--size-small);
   white-space: nowrap;
 }
 
 .work-item-desc {
-  color: var(--ink-soft);
+  color: var(--copperwood);
   max-width: 60ch;
   margin-top: 0.5rem;
   font-size: 0.9375rem;
@@ -212,17 +212,17 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-size: var(--size-small);
 }
 
 .site-footer a {
-  color: var(--ink);
+  color: var(--graphite);
   transition: color 0.15s ease;
 }
 
 .site-footer a:hover {
-  color: var(--accent-hover);
+  color: var(--softperiwinkle);
 }
 
 /* ==========================================================================
@@ -234,7 +234,7 @@ img {
 }
 
 .cs-header .eyebrow {
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-size: var(--size-small);
   margin-bottom: 0.75rem;
 }
@@ -257,7 +257,7 @@ img {
 
 .cs-meta dt {
   font-size: var(--size-small);
-  color: var(--ink-soft);
+  color: var(--copperwood);
   margin-bottom: 0.35rem;
 }
 
@@ -284,12 +284,12 @@ img {
 
 .cs-section h3 {
   font-size: var(--size-h3);
-  color: var(--accent);
+  color: var(--asoftperiwinkle);
   margin-bottom: 0.75rem;
 }
 
 .cs-section p {
-  color: var(--ink-soft);
+  color: var(--copperwood);
   margin-bottom: 1.25rem;
 }
 
@@ -309,7 +309,7 @@ img {
 .cs-results h2 {
   grid-column: 1 / -1;
   font-size: var(--size-h3);
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -320,12 +320,12 @@ img {
   font-weight: 700;
   font-size: 2.25rem;
   letter-spacing: -0.02em;
-  color: var(--accent);
+  color: var(--softperiwinkle);
   line-height: 1.1;
 }
 
 .cs-stat-label {
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-size: 0.9375rem;
   margin-top: 0.25rem;
 }
@@ -333,18 +333,18 @@ img {
 .cs-credits {
   border-top: 1px solid var(--line);
   padding-block: clamp(1.5rem, 4vw, 2.5rem);
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-size: var(--size-small);
 }
 
 .cs-credits dt {
-  color: var(--ink);
+  color: var(--graphite);
   display: inline;
 }
 
 .cs-note {
   font-size: var(--size-small);
-  color: var(--ink-soft);
+  color: var(--copperwood);
   font-style: italic;
   border-left: 2px solid var(--line);
   padding-left: 1rem;
@@ -365,6 +365,6 @@ img {
 }
 
 .simple-page p {
-  color: var(--ink-soft);
+  color: var(--copperwood);
   max-width: 60ch;
 }
