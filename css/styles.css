@@ -9,8 +9,8 @@
   --seashell: #FFF3F0;       /* background */
   --graphite: #41393E;         /* primary text */
   --copperwood: #BB6B00;    /* secondary text, muted */
-  --soft periwinkle: #A594F9;      /* ink-blue, used for links and small emphasis */
-  --bright gold: #FDE12D;/* ochre, used ONLY on hover/focus states */
+  --softperiwinkle: #A594F9;      /* ink-blue, used for links and small emphasis */
+  --brightgold: #FDE12D;/* ochre, used ONLY on hover/focus states */
   --line: #DEDAD1;        /* hairline borders/dividers */
 
   /* Type scale — a limited set of sizes keeps the page feeling considered */
